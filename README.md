@@ -50,6 +50,7 @@ Link (extension for vscode): https://marketplace.visualstudio.com/items?itemName
 ## Live Server (extension for Visual Studio code)
 
 Launch a local development server with live reload feature for static & dynamic pages.
+
 Link: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 ## Element: insertAdjacentHTML() method
