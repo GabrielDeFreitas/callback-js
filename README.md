@@ -4,7 +4,7 @@
 
 content 1 edit
 
-<img width="800px" src="component.PNG">
+<img width="100%" src="component.PNG">
 
 ```js
 const Button = (text, callback) => {
@@ -38,7 +38,9 @@ Button("Primary", (button) => {
 ```
 <br/>
 
-# Complementary material
+# Study reference
+
+Below links for better understanding of the content.
 
 ## Editorconfig
 
