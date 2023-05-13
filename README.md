@@ -67,7 +67,7 @@ The cssText property of the CSSStyleDeclaration interface returns or sets the te
 
 Link: https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText
 
-## Element: classList property ->
+## Element: classList property
 
 The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.
 
