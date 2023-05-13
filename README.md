@@ -1,10 +1,10 @@
 # Callback Javascript
 
-## Contents
-
-content 1 edit
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
 <img width="100%" src="component.PNG">
+
+Here is a quick example:
 
 ```js
 const Button = (text, callback) => {
@@ -21,7 +21,7 @@ const Button = (text, callback) => {
   return button
 }
 ```
-content 2 edit
+Dynamic content:
 
 ```js
 Button("Primary", (button) => {
