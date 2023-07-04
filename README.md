@@ -21,6 +21,9 @@ const Button = (text, callback) => {
   return button
 }
 ```
+
+# Another examples
+
 Dynamic content:
 
 ```js
@@ -35,6 +38,79 @@ Button("Primary", (button) => {
     alert("Primary button click!")
   })
 })
+```
+
+Promises e async/await Dynamic content:
+
+We can use Promises and async/await to asynchronously load dynamic content and update the DOM based on the fetched data.
+
+```js
+const fetchData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const data = "Dynamic content";
+      resolve(data);
+    }, 2000);
+  });
+}
+
+async function renderDynamicContent() {
+  try {
+    const data = await fetchData();
+    const title = document.querySelector("#title");
+    title.textContent = data;
+  } catch (error) {
+    console.error("Error loading dynamic content:", error);
+  }
+}
+
+renderDynamicContent();
+
+```
+
+Working with higher order functions and dynamic components:
+
+We can use higher order functions to create custom dynamic components. Here is an example of a function that creates a dynamic form with input fields.
+
+```js
+const createDynamicForm = (fields, onSubmit) => {
+  const form = document.createElement("form");
+
+  fields.forEach((field) => {
+    const input = document.createElement("input");
+    input.type = field.type;
+    input.placeholder = field.placeholder;
+
+    form.appendChild(input);
+  });
+
+  const submitButton = document.createElement("button");
+  submitButton.textContent = "Send";
+
+  submitButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    onSubmit(Object.fromEntries(formData));
+  });
+
+  form.appendChild(submitButton);
+
+  return form;
+}
+
+const formFields = [
+  { type: "text", placeholder: "Name" },
+  { type: "email", placeholder: "Email" },
+  { type: "password", placeholder: "Password" },
+];
+
+const formContainer = document.querySelector("#form-container");
+
+const myForm = createDynamicForm(formFields, (formData) => {
+  console.log("Form data:", formData);
+});
+
+formContainer.appendChild(myForm);
 ```
 <br/>
 
