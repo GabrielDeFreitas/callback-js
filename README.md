@@ -22,8 +22,6 @@ const Button = (text, callback) => {
 }
 ```
 
-# Another examples
-
 Dynamic content:
 
 ```js
@@ -39,6 +37,8 @@ Button("Primary", (button) => {
   })
 })
 ```
+
+# Another examples
 
 Promises e async/await Dynamic content:
 
