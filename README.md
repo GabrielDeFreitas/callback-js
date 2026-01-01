@@ -4,7 +4,7 @@ A callback function is a function passed into another function as an argument, w
 
 <img width="100%" src="component.PNG">
 
-Here is a quick example:
+## Here is a quick example:
 
 ```js
 const Button = (text, callback) => {
@@ -22,7 +22,7 @@ const Button = (text, callback) => {
 }
 ```
 
-Dynamic content:
+## Dynamic content:
 
 ```js
 Button("Primary", (button) => {
@@ -38,7 +38,7 @@ Button("Primary", (button) => {
 })
 ```
 
-# Another examples
+## Another examples
 
 Promises e async/await Dynamic content:
 
@@ -68,7 +68,7 @@ renderDynamicContent();
 
 ```
 
-Working with higher order functions and dynamic components:
+## Working with higher order functions and dynamic components:
 
 We can use higher order functions to create custom dynamic components. Here is an example of a function that creates a dynamic form with input fields.
 
@@ -114,7 +114,7 @@ formContainer.appendChild(myForm);
 ```
 <br/>
 
-# Study reference
+## Study reference
 
 Below links for better understanding of the content.
 
